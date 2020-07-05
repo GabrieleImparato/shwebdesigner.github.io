@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
   $textmail = "Hai ricevuto un'e-mail da " . $name . ".\n\n" . $message;
 
   mail($mailTo,$subject,$textmail,$headers);
-  header("Location: contact.php?mailsent");
+  header("Location: contact.html?mailsend");
 }
 
    ?>
