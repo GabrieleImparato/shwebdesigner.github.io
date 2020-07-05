@@ -26,7 +26,7 @@
       <a href="#" class="fl-right godown"><img src="shopping-cart.png" class="logo" width="30px" height="30px"><small class="cartbox" >0</small> </a>
     </nav>
     <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="contact.html">Contatti</a>
+  <a class="navbar-brand" href="contact.php">Contatti</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -36,13 +36,13 @@
         <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="template.html">Template</a>
+        <a class="nav-link" href="template.php">Template</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link " href="info.html">Info</a>
+          <a class="nav-link " href="info.php">Info</a>
       </li>
       <li>
-        <a href="signin.html">
+        <a href="signin.php">
           <button type="button"  class="btn btn-warning btn-padtop">Log in</button>
         </a>
       </li>
@@ -58,6 +58,19 @@
   <h3>Hai domande da farmi?</h3>
   <h6>Chiarisci i tuoi dubbi!</h6>
   <br>
+  <?php
+
+  $msg = "";
+  if (isset($_GET['emptyfields'])) {
+    $msg = 'Per favore riempire tutti i campi';
+    echo '<div class="alert alert-danger">'.$msg.'</div>';
+  }
+  if (isset($_GET['mailsent'])) {
+    $msg = 'E-mail inviata con successo!';
+    echo '<div class="alert alert-success">'.$msg.'</div>';
+  }
+
+  ?>
   <div class="row">
     <div class="col">
       <label for="inputNome">Nome</label>
@@ -92,6 +105,9 @@
   </div>
   </div>
 </form>
+
+
+<div class="alert alert-danger"></div>
 
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-footer-up" style="display: block!important;">

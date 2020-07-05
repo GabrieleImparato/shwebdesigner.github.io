@@ -26,7 +26,7 @@
       <a href="#" class="fl-right godown"><img src="shopping-cart.png" class="logo" width="30px" height="30px"><small class="cartbox" >0</small> </a>
     </nav>
     <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="signin.html">Log In</a>
+  <a class="navbar-brand" href="signin.php">Log In</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -36,16 +36,16 @@
         <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="template.html">Template</a>
+        <a class="nav-link" href="template.php">Template</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contatti</a>
+        <a class="nav-link" href="contact.php">Contatti</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link " href="info.html">Info</a>
+          <a class="nav-link " href="info.php">Info</a>
       </li>
       <li>
-        <a href="signin.html">
+        <a href="signin.php">
           <button type="button"  class="btn btn-warning btn-padtop">Log in</button>
         </a>
       </li>

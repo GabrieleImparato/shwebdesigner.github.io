@@ -118,27 +118,27 @@
 
     <nav class="navbar navbar-dark bg-yellow ">
       <img src="SH.png" class="logo" width="50px" height="50px">
-      <a class="navbar-brand nav-color-title fl-left" href="index.html">Web Designer</a>
+      <a class="navbar-brand nav-color-title fl-left" href="index.php">Web Designer</a>
       <a href="#" class="fl-right godown"><img src="shopping-cart.png" class="logo" width="30px" height="30px"><small class="cartbox" >0</small> </a>
     </nav>
     <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">Home</a>
+  <a class="navbar-brand" href="index.php">Home</a>
   <button class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarsExample01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="template.html">Template</a>
+        <a class="nav-link" href="template.php">Template</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contatti</a>
+        <a class="nav-link" href="contact.php">Contatti</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link " href="info.html">Info</a>
+          <a class="nav-link " href="info.php">Info</a>
       </li>
       <li>
-        <a href="signin.html">
+        <a href="signin.php">
           <button type="button"  class="btn btn-warning btn-padtop">Log in</button>
         </a>
       </li>

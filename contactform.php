@@ -6,12 +6,20 @@ if (isset($_POST['submit'])) {
   $subject = $_POST['oggetto'];
   $message = $_POST['messaggio'];
 
-  $mailTo = "cobra0571@hotmail.it";
-  $headers = "Da: " . $mailFrom;
-  $textmail = "Hai ricevuto un'e-mail da " . $name . ".\n\n" . $message;
+if (empty($name) || empty($mailFrom) || empty($subject) || empty($message)) {
 
-  mail($mailTo,$subject,$textmail,$headers);
-  header("Location: contact.html?mailsend");
+header('location:contact.php?emptyfields');
+}else{
+
+  $mailTo = "gab.imp2020@yahoo.com";
+
+  if (mail($mailTo,$subject,$message,$mailFrom)) {
+    header('location:contact.php?mailsent');
+  }
+}
+
+}else {
+  header('location: contact.php');
 }
 
    ?>
